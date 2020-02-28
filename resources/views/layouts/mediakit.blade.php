@@ -102,7 +102,7 @@
 </body>
 <script>
 	$(()=>{
-		$.get("{{URL::to('mam/dashboard/channel')}}",(x)=>{
+		$.get("{{URL::to('channel')}}",(x)=>{
 			var view = '<div class="footer-widget widget"><div class="row">';
 			x.forEach((xd)=>{
 				var url = 'img/logounit/'+xd.img;

@@ -77,7 +77,7 @@ class IndexController extends Controller
             ->paginate(6);
             return response($isi_portal,200);
         } catch (\Exception $e){
-            return response(array('data'=>'Error at Backend'));
+            return response($e->getMessage);
         } 
     }
 
